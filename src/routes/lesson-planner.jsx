@@ -34,7 +34,7 @@ const SECTIONS_DATA = [
     content:'Students apply understanding by designing a simple experiment to test one factor affecting photosynthesis rate. Groups create a hypothesis, identify variables, and outline their experimental procedure on poster paper.'
   },
   { id:'evaluate', icon:'✅', title:'Evaluate (8 min)',
-    content:'Exit ticket: Students complete a 5-question formative assessment including one diagram labeling task, two MCQs, and two short-answer questions. Results inform next day's differentiation groups.'
+    content:'Exit ticket: Students complete a 5-question formative assessment including one diagram labeling task, two MCQs, and two short-answer questions. Results inform next day differentiation groups.'
   },
 ]
 
