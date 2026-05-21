@@ -10,29 +10,14 @@ const NAV_GROUPS = [
   {
     label: 'AI TOOLS',
     items: [
-      { id: '/lesson',    icon: '📖', label: 'Lesson Planner'       },
-      { id: '/worksheet', icon: '📄', label: 'Worksheet Generator'  },
-      { id: '/quiz',      icon: '❓', label: 'Quiz Builder'          },
-      { id: '/lesson',    icon: '📋', label: 'Rubric Creator'        },
-      { id: '/lesson',    icon: '🎞️', label: 'Presentation Gen'      },
-    ],
-  },
-  {
-    label: 'LIBRARY',
-    items: [
-      { id: '/library',    icon: '🗃️', label: 'Question Bank'      },
-      { id: '/library',    icon: '📁', label: 'Resource Library'   },
-      { id: '/ai-chat',    icon: '💬', label: 'AI Assistant'       },
-    ],
-  },
-  {
-    label: 'STUDENTS',
-    items: [
-      { id: '/students',   icon: '👥', label: 'Student Progress'   },
-      { id: '/curriculum', icon: '🗺️', label: 'Curriculum Explorer' },
+      { id: '/lesson', icon: '📖', label: 'Lesson Planner' },
+      { id: '/worksheet', icon: '📄', label: 'Worksheet Generator' },
+      { id: '/quiz', icon: '❓', label: 'Quiz Builder' },
+      { id: '/ai-chat', icon: '💬', label: 'AI Assistant' },
     ],
   },
 ]
+
 
 export function AppSidebar() {
   const [collapsed, setCollapsed] = useState(false)
