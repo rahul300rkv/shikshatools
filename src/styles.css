@@ -1,0 +1,130 @@
+/* ── Shiksha Tools – Global Styles ───────────────────────────────────────── */
+/* Based on Sikhana Sangam (Lovable) design system                            */
+
+:root {
+  /* Primary – saffron orange */
+  --primary:        #C84B0C;
+  --primary-fg:     #ffffff;
+  --primary-5:      #FFF4EE;
+  --primary-10:     #FFE0CC;
+
+  /* Secondary – forest green */
+  --secondary:      #2A7A3B;
+  --secondary-fg:   #ffffff;
+  --secondary-5:    #EEF8F1;
+  --secondary-10:   #D0EDD8;
+
+  /* Surfaces */
+  --bg:             #FAF9F7;
+  --card:           #ffffff;
+  --fg:             #1A1613;
+  --muted:          #F4F1ED;
+  --muted-fg:       #6B6560;
+  --accent:         #FFF0E6;
+  --accent-fg:      #7A2E00;
+  --border:         #E8E3DC;
+
+  /* Sidebar */
+  --sidebar:        #ffffff;
+  --sidebar-border: #ECE8E2;
+  --sidebar-accent: #FFF5EE;
+
+  /* Chart / status palette */
+  --chart-1:  #C84B0C;
+  --chart-2:  #2A7A3B;
+  --chart-3:  #2563EB;
+  --chart-3b: #EFF6FF;
+  --chart-4:  #D97706;
+  --chart-4b: #FEF3C7;
+  --chart-5:  #DB2777;
+  --chart-5b: #FCE7F3;
+
+  --destructive:    #C0392B;
+  --destructive-bg: #FEE2E2;
+
+  /* Radius */
+  --r:  10px;
+  --r2: 14px;
+  --r3: 20px;
+}
+
+/* ── Reset ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Inter', 'Sora', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.5;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ── Scrollbar (thin, branded) ──────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted-fg); }
+
+/* ── Layout helpers ─────────────────────────────────────────────────────────── */
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 24px 28px;
+}
+
+/* ── Transitions ────────────────────────────────────────────────────────────── */
+.transition { transition: all .15s ease; }
+
+/* ── Tool card hover (used by ToolsGrid) ──────────────────────────────────── */
+.tool-card {
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+.tool-card .hover-overlay {
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.tool-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+/* ── Sidebar nav item ────────────────────────────────────────────────────────── */
+.nav-item { transition: background .12s, color .12s; }
+.nav-item:hover { background: var(--muted) !important; }
+
+/* ── Accordion ───────────────────────────────────────────────────────────────── */
+.accordion-content {
+  overflow: hidden;
+  transition: max-height .25s ease, opacity .2s ease;
+}
+
+/* ── Notification ping dot animation ─────────────────────────────────────────── */
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+.ping { animation: ping 1.5s cubic-bezier(0,0,.2,1) infinite; }
+
+/* ── Focus ring ──────────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
