@@ -7,6 +7,7 @@ import QuizPage       from './routes/quiz-builder.jsx'
 import AIChatPage     from './routes/ai-chat.jsx'
 import PricingPage    from './routes/pricing.jsx'
 import SettingsPage   from './routes/settings.jsx'
+import QuestionBankPage from './routes/question-bank.jsx'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/ai-chat"     element={<AIChatPage />} />
       <Route path="/pricing"     element={<PricingPage />} />
       <Route path="/settings"    element={<SettingsPage />} />
+      <Route path="/question-bank" element={<QuestionBankPage />} />
       <Route path="*"            element={<DashboardPage />} />
     </Routes>
   )
