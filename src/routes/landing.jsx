@@ -1,3 +1,4 @@
+// REBRANDED FOR CBSE TEACHERS
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Badge, Btn, Card } from '../components/ui.jsx'
@@ -8,7 +9,7 @@ const TOOLS = [
   { icon:'❓', label:'Quiz Builder',             desc:'Design auto-graded quizzes with MCQ, short-answer, True/False, and HOTS question types.',                          color:'#2563EB', bg:'#EFF6FF', created:48,  trend:'+9%',  tag:null,       path:'/quiz'      },
   { icon:'📋', label:'Rubric Creator',           desc:'Generate detailed scoring rubrics with customisable criteria aligned to CBSE/ICSE assessment standards.',           color:'#D97706', bg:'#FEF3C7', created:24,  trend:'+6%',  tag:null,       path:'/lesson'    },
   { icon:'🎞️', label:'Presentation Generator', desc:'Create visually engaging slide decks with speaker notes and curriculum-aligned content.',                            color:'#DB2777', bg:'#FCE7F3', created:19,  trend:'+15%', tag:'New',      path:'/lesson'    },
-  { icon:'💬', label:'AI Assistant',             desc:'Chat with Shiksha AI to brainstorm, plan, draft letters, or get teaching ideas instantly.',                        color:'#C84B0C', bg:'#FFF4EE', created:156, trend:'+22%', tag:'Growing',  path:'/ai-chat'   },
+  { icon:'💬', label:'AI Assistant',             desc:'Chat with TeachTools AI to brainstorm, plan, draft letters, or get teaching ideas instantly.',                        color:'#C84B0C', bg:'#FFF4EE', created:156, trend:'+22%', tag:'Growing',  path:'/ai-chat'   },
 ]
 
 const RECENT = [
