@@ -13,6 +13,7 @@ const NAV_GROUPS = [
       { id: '/lesson', icon: '📖', label: 'Lesson Planner' },
       { id: '/worksheet', icon: '📄', label: 'Worksheet Generator' },
       { id: '/quiz', icon: '❓', label: 'Quiz Builder' },
+      { id: '/question-bank', icon: '🏦', label: 'Question Bank' },
       { id: '/ai-chat', icon: '💬', label: 'AI Assistant' },
     ],
   },
@@ -52,9 +53,9 @@ export function AppSidebar() {
         {!collapsed && (
           <div style={{ flex: 1, minWidth: 0 }}>
             <div style={{ fontWeight: 700, fontSize: 14, color: 'var(--fg)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-              Shiksha Tools
+              TeachTools
             </div>
-            <div style={{ fontSize: 10, color: 'var(--muted-fg)' }}>AI Teaching Assistant</div>
+            <div style={{ fontSize: 10, color: 'var(--muted-fg)' }}>CBSE Teacher Suite</div>
           </div>
         )}
 
