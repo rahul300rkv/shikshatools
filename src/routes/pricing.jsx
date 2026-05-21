@@ -48,13 +48,23 @@ const TESTIMONIALS = [
 ]
 
 const FAQS = [
-  { q:'Can I try Pro features before committing?', a:'Yes! We offer a 14-day free trial of Pro with no credit card required. You get full access to all features. After the trial, you can subscribe at ₹999/month or ₹799/month billed annually.' },
-  { q:'Which boards are supported?', a:'We fully support CBSE, ICSE, ISC, and all major State Boards including Maharashtra, Tamil Nadu, Karnataka, UP Board, Rajasthan, and more. Content is tailored to each board's specific syllabus and marking patterns.' },
-  { q:'Can I generate content in Hindi?', a:'Absolutely. Pro and School Team plans support bilingual content generation in English + Hindi. Regional languages like Marathi, Tamil, and Telugu are in active development.' },
-  { q:'What happens to my content if I downgrade?', a:'All your created content remains accessible and exportable forever. You just won't be able to create new resources beyond the Free plan limits. Nothing is ever deleted from your account.' },
-  { q:'Is my data secure and compliant with Indian data protection laws?', a:'Yes. Shiksha Tools is built with Indian data privacy in mind. We never sell your data, all content is encrypted at rest and in transit, and we comply with the Digital Personal Data Protection Act 2023.' },
-  { q:'Do you offer a discount for government schools?', a:'Yes! Government school teachers and NGO-affiliated educators can apply for a 50% discount on Pro plans. Contact us at support@shiksha.tools with your government ID.' },
-]
+  {
+    q: "Can I try Pro features before committing?",
+    a: "Yes! We offer a 14-day free trial of Pro with no credit card required."
+  },
+  {
+    q: "Which boards are supported?",
+    a: "We fully support CBSE, ICSE, ISC, and all major State Boards including Maharashtra."
+  },
+  {
+    q: "Can I generate content in Hindi?",
+    a: "Absolutely. Pro and School Team plans support bilingual content generation in Hindi."
+  },
+  {
+    q: "What happens to my content if I downgrade?",
+    a: "All your created content remains accessible and exportable forever."
+  } ]
+
 
 export default function PricingPage() {
   const navigate   = useNavigate()
